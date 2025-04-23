@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, Boolean
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
@@ -11,3 +11,4 @@ class VueloDB(Base):
     hora = Column(String)
     origen = Column(String)
     destino = Column(String)
+    prioridad = Column(Boolean)

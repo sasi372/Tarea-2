@@ -6,6 +6,7 @@ class Vuelo(BaseModel):
     hora: str
     origen: str
     destino: str
+    prioridad: bool = False
 
     class Config:
         orm_mode = True
